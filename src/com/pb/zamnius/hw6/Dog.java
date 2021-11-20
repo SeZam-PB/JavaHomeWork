@@ -3,7 +3,7 @@ package com.pb.zamnius.hw6;
 public class Dog extends Animal {
 
     public Dog() {
-        super("Собака");}
+        super("Собака", "м'ясо", "будка");}
 
     @Override
     public void makeNoise() {
@@ -12,10 +12,10 @@ public class Dog extends Animal {
 
     @Override
     public void eat() {
-        System.out.println(getName()+ " їсть Педігрі");
+        System.out.println(getName()+ " їсть " +getFood());
     }
     @Override
     public void live() {
-        System.out.println(getName()+ " живе в будці");
+        System.out.println(getName()+ " живе " +getLocation());
     }
 }

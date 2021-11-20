@@ -4,7 +4,7 @@ package com.pb.zamnius.hw6;
 public class Horse extends Animal {
 
     public Horse() {
-        super("Кінь");
+        super("Кінь", "сіно", "хлів");
     }
     @Override
     public void makeNoise() {
@@ -13,10 +13,10 @@ public class Horse extends Animal {
 
     @Override
     public void eat() {
-        System.out.println(getName()+ " їсть сіно");
+        System.out.println(getName()+ " їсть " +getFood());
     }
     @Override
     public void live() {
-        System.out.println(getName()+ " живе в хліву");
+        System.out.println(getName()+ " живе " +getLocation());
     }
 }
